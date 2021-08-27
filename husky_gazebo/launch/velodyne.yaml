@@ -1,0 +1,18 @@
+target_frame: robot_1/base_link # Leave empty to output scan in the pointcloud frame
+tolerance: 1.0
+min_height: 0.05
+max_height: 1.0
+
+# angle_min: -2.3561899662 # -135 degrees
+# angle_max: 2.3561899662 # 135 degrees
+# angle_increment: 0.00436331471428 # 0.25 degrees
+# scan_time: 0.033333333
+range_min: 0.1
+range_max: 12.0
+use_inf: true
+
+# Concurrency level, affects number of pointclouds queued for processing and number of threads used
+# 0 : Detect number of cores
+# 1 : Single threaded
+# 2->inf : Parallelism level
+concurrency_level: 0

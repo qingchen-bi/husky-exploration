@@ -1,0 +1,9 @@
+<launch>
+  <!-- Include poincloud_to_laserscan if simulated velodyne is attached -->
+  <node pkg="pointcloud_to_laserscan" type="pointcloud_to_laserscan_node" name="velodyne_to_laserscan" output="screen">
+
+    <remap from="cloud_in" to="velodyne/point_cloud"/>
+    <remap from="scan" to="velodyne/scan"/>
+    <rosparam command="load" file="$(find husky_gazebo)/launch/velodyne.yaml" />
+  </node>
+</launch>

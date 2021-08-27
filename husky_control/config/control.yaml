@@ -13,7 +13,7 @@ husky_velocity_controller:
   velocity_rolling_window_size: 2
 
   # Base frame_id
-  base_frame_id: robot_1/base_link
+  base_frame_id: robot_1/base_link # for rrt_exploration frame
   odom_frame_id: robot_1/odom
   # Odometry fused with IMU is published by robot_localization, so
   # no need to publish a TF based on encoders alone.
